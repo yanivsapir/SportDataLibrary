@@ -19,6 +19,12 @@ namespace SoccerDataLibrary
                 {DataType.TEAM, "teams/{0}"},
                 {DataType.PLAYER, "teams/{0}/players"}
             };
+
+        internal object GetJsonStringFromUrl(string v)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Base URL of the web service API
         /// </summary>

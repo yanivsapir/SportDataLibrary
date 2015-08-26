@@ -41,6 +41,10 @@
       <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="nunit.framework, Version=3.0.5715.30856, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.0.0-beta-4\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -66,6 +70,14 @@
     <Compile Include="Services\Contract\Parseable.cs" />
     <Compile Include="Services\Impl\FootBallDataService.cs" />
     <Compile Include="Services\Impl\SoccerDataFactory.cs" />
+    <Compile Include="Test\Models\TeamLeagueTableTests.cs" />
+    <Compile Include="Test\Models\TeamTests.cs" />
+    <Compile Include="Test\Models\PlayerTest.cs" />
+    <Compile Include="Test\Models\LeagueTableTests.cs" />
+    <Compile Include="Test\Models\LeagueTests.cs" />
+    <Compile Include="Test\Services\SoccerDataFactoryTests.cs" />
+    <Compile Include="Test\Utils\SecondaryLeaguesDictionaryCreatorTests.cs" />
+    <Compile Include="Test\Utils\DataExtractorTests.cs" />
     <Compile Include="Utils\DataExtractor.cs" />
     <Compile Include="Utils\SecondaryLeaguesDictionaryCreator.cs" />
   </ItemGroup>
@@ -74,6 +86,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -128,7 +128,10 @@ namespace SoccerDataLibrary.Models
                     playersByName.Add(player.Name, player);
                 }
             }
-            catch (Exception e) { Console.WriteLine("The api doesn't have data about the players of " + Name+"\n"); }
+            catch (Exception e) {
+                Console.WriteLine("The api doesn't have data about the players of " + Name+"\n");
+                Console.WriteLine(e.GetType());
+            }
         }
 
         /// <summary>
